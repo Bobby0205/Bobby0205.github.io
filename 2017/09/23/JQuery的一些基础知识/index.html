@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/9 | Simple Life</title>
+  <title>JQuery的一些基础知识 | Simple Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="有时候回不去的 不仅仅是昨天">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Simple Life">
-<meta property="og:url" content="http://yoursite.com/archives/2017/09/index.html">
+  <meta name="description" content="JQuery一.基础和介绍12345678910111.   怎么使用jQuery？    1.先引入jQuery的文件    2.入口函数(例如onload，jQuery里面叫ready)    3.调用jQuery提供的方法2. 版本	1. .x版本：兼容老版本浏览器，例如IE6，7，8.现在jQuery作者已经不更新1.x的功能了，但是呢会优化和解决部分bug    2. x版本：抛弃了老版">
+<meta name="keywords" content="技术分享">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JQuery的一些基础知识">
+<meta property="og:url" content="http://yoursite.com/2017/09/23/JQuery的一些基础知识/index.html">
 <meta property="og:site_name" content="Simple Life">
-<meta property="og:description" content="有时候回不去的 不仅仅是昨天">
+<meta property="og:description" content="JQuery一.基础和介绍12345678910111.   怎么使用jQuery？    1.先引入jQuery的文件    2.入口函数(例如onload，jQuery里面叫ready)    3.调用jQuery提供的方法2. 版本	1. .x版本：兼容老版本浏览器，例如IE6，7，8.现在jQuery作者已经不更新1.x的功能了，但是呢会优化和解决部分bug    2. x版本：抛弃了老版">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-23T13:46:32.079Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Simple Life">
-<meta name="twitter:description" content="有时候回不去的 不仅仅是昨天">
+<meta name="twitter:title" content="JQuery的一些基础知识">
+<meta name="twitter:description" content="JQuery一.基础和介绍12345678910111.   怎么使用jQuery？    1.先引入jQuery的文件    2.入口函数(例如onload，jQuery里面叫ready)    3.调用jQuery提供的方法2. 版本	1. .x版本：兼容老版本浏览器，例如IE6，7，8.现在jQuery作者已经不更新1.x的功能了，但是呢会优化和解决部分bug    2. x版本：抛弃了老版">
   
     <link rel="alternative" href="/atom.xml" title="Simple Life" type="application/atom+xml">
   
@@ -149,36 +151,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-JQuery的一些基础知识" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      JQuery的一些基础知识
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/23/JQuery的一些基础知识/" class="archive-article-date">
+
+        
+        <a href="/2017/09/23/JQuery的一些基础知识/" class="archive-article-date">
   	<time datetime="2017-09-23T13:43:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/23/JQuery的一些基础知识/">JQuery的一些基础知识</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h1><h3 id="一-基础和介绍"><a href="#一-基础和介绍" class="headerlink" title="一.基础和介绍"></a>一.基础和介绍</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1.   怎么使用jQuery？</div><div class="line">    1.先引入jQuery的文件</div><div class="line">    2.入口函数(例如onload，jQuery里面叫ready)</div><div class="line">    3.调用jQuery提供的方法</div><div class="line">2. 版本</div><div class="line">	1. .x版本：兼容老版本浏览器，例如IE6，7，8.现在jQuery作者已经不更新1.x的功能了，但是呢会优化和解决部分bug</div><div class="line"></div><div class="line">    2. x版本：抛弃了老版本浏览器，只兼容新式浏览器。新增了部分新的方法。停止更新了</div><div class="line"></div><div class="line">    3. x版本：抛弃了老版本浏览器，只兼容新式浏览器。新增部分新的方法，目前会更新</div><div class="line">4. Jquery其实就是一套js的库文件；</div></pre></td></tr></table></figure>
+<h3 id="二"><a href="#二" class="headerlink" title="二."></a>二.</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">1. onload和ready的对比：</div><div class="line">	1. window.onload方法 ，</div><div class="line">		1. 如果window.onload用了多个，那么后面的会覆盖前面的</div><div class="line">     	2. onload是页面加载完毕，包括dom元素还有外部文件	</div><div class="line">	2. ready方法(入口函数)</div><div class="line">		1. 如果有多个，不会覆盖，而是会整合到一起，比onload方法执行的时间要早</div><div class="line">    	2. ready触发的时间：是所有dom元素都创建完毕就触发</div><div class="line">    3. $(document.body)|$(&apos;body&apos;)</div><div class="line">2. $()函数介绍  $===jquery</div><div class="line">	1. 就是jquery里面定义的函数</div><div class="line">	2. 作用：可以把dom元素来一个变身，变成能力更强大的jQuery对象，那么就有jQuery里面写好的方法了，如果要调用jQuery给我们提供的更好的方法，就需要用$()给某个dom元素进行包装</div><div class="line">	3. 完整写法：window.$</div><div class="line">	4. 最完整写法：</div><div class="line">		1. window.jQuery(document.body).css(&apos;background&apos;, &apos;hotpink&apos;);</div><div class="line">		2. jQuery(document.body).css(&apos;background&apos;, &apos;hotpink&apos;);</div><div class="line">	5. 如果需要同时写多个属性赋值，那么css里要传入一个对象&#123;&#125;</div><div class="line">	6. jq绑定事件，只要对某个jq对象.事件名（不用加on）</div><div class="line">	7. jQuery里面不用循环，直接设置就可以了。因为它内部会帮我们循环，并且给每个元素设置成我们写的css，隐式迭代，jQuery的特点：有隐式迭代，自动帮我们循环</div><div class="line">	8. </div><div class="line">		1. 伪类选择器</div><div class="line">			1. $(&apos;input:first&apos;)</div><div class="line">			2. $(&apos;input:eq(1)&apos;)代表找到下标为1的input标签（下标从0开始）</div><div class="line">			3. $(&apos;input:last&apos;)</div><div class="line">		2. 过滤有关的方法</div><div class="line">			1. $(&apos;input&apos;).first().click</div><div class="line">			2. $(&apos;input&apos;).eq(1).click</div><div class="line">			3.  $(&apos;input&apos;).last().click</div><div class="line">		4.   $(&apos;li:even&apos;)偶数</div><div class="line">		5.    $(&apos;li:odd&apos;)奇数</div><div class="line">	9. 如果要使用jQuery的方法，还得把this包装起来$(this)</div></pre></td></tr></table></figure>
+<h3 id="二-动画效果"><a href="#二-动画效果" class="headerlink" title="二.动画效果"></a>二.动画效果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">1. 获取兄弟元素</div><div class="line">	1. siblings方法可以获取它所有的兄弟元素</div><div class="line">	2. siblings（‘div’）方法也可以传入选择器，代表只找符合某种选择器的兄弟元素</div><div class="line">2. 找父元素   parent()</div><div class="line">	1. $(this).parent().css(&apos;border&apos;, &apos;10px solid black&apos;);</div><div class="line">3. 动画slideDown();slideUp();</div><div class="line">4. 取消动画stop();</div><div class="line">	1. $(this).siblings(&apos;div&apos;).stop();</div><div class="line">5. mouseover和mouseenter</div><div class="line">6. 显示和隐藏</div><div class="line">	1. show(500);</div><div class="line">		1. 如果不传入参数，默认是没有动画效果的</div><div class="line">   		2. 如果传入参数，代表动画的持续时间，以毫秒为单位1秒= 1000毫秒</div><div class="line">	2. hide(500);</div><div class="line">6. 类名</div><div class="line">	1. addClass(&apos;active&apos;);</div><div class="line">	2. removeClass(&apos;active&apos;);</div><div class="line">7. .链式编程</div><div class="line">	1.    链式编程的原理：每个方法返回值都是它调用的对象</div><div class="line">        jQuery中几乎所有的方法都可以链式编程</div><div class="line">        例如：CSS()，index()不行，css返回值是它style的属性值</div><div class="line">        所以获取到属性的方法，都不能链式编程</div><div class="line">8. jquery对象和DOM对象的相互转换</div><div class="line">	1. dom转jQuery $()（一般代码规范里，如果变量保存的是jQuery对象，那么这个变量名前面加$.这样可以提高代码阅读可读性，让人一看就知道这是一个jQuery对象，应该用jQuery的方法）</div><div class="line">	2.  jQuery包装对象特点：哪怕只有一个元素，也是当数组来保存</div><div class="line">        数组中保存的每个元素其实都是一个dom元素</div><div class="line">        jQuery对象究竟是什么东西</div><div class="line">	3. 把jQuery转成dom??直接通过下标就可以转</div><div class="line">		1. console.log($jqDiv[0]);</div><div class="line">		2. console.log($jqDiv.get(0));</div><div class="line">		3.    $(&apos;input&apos;)[0].click=function()&#123;</div><div class="line">					  &#125;//这样就可以调用onclick了</div></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title="#"></a>#</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">1. 属性选择器</div><div class="line">	1.  $(&apos;li[class]&apos;)</div><div class="line">	2.  $(&apos;li[class=book]‘)</div><div class="line">	3.  $(&apos;li[class^=m]&apos;)判断以什么开头</div><div class="line">	4.  $(&apos;li[class$=n]&apos;)判断以什么结尾</div><div class="line">	5.  $(&apos;li[class*=o]&apos;)属性内任何地方包含</div><div class="line">	6.  $(&apos;li[price=&quot;9.9&quot;]&apos;)这里9.9有小数点，需用“”包起来；属性值可以用“”包起来；</div><div class="line">2. 淡入淡出淡到淡出入</div><div class="line">	1. fadeIn/fadeOut/fadeToggle:  1,3 4 </div><div class="line">	2. 此方法有四个参数：</div><div class="line">	        1.动画持续时间</div><div class="line">	        2.到哪个透明度(fadeTo 的)</div><div class="line">	        3.动画效果（一般不写） swing快速   linear</div><div class="line">	        4.回调函数</div><div class="line">	    fadeTo();：用动画效果设置元素到某个透明度</div><div class="line">3. width():获取宽度   height()</div><div class="line">    attr()：修改某个dom元素的属性</div><div class="line">4. stop()默认只会停掉队列里当前正在进行的一个动画，假如队列里有10个，那么只会停1个，还有9个在继续</div><div class="line">5. stop(true)就代表无论你有多少动画在进行，全部都停止</div><div class="line">6. clone() 克隆一个元素(true)深克隆  事件也会克隆，  （false也是深克隆，之克隆标签和它的属性，但不包括事件</div><div class="line">7.  append(子元素,子元素); 给某个元素追加子元素，子元素放在括号里传进去（一次可以添加多个元素）</div><div class="line">    appendTo();给某个元素添加到哪个父元素去，括号里传的是父元</div><div class="line">    remove(); 谁调用谁删除</div><div class="line">8. val()  获取文本框的值</div><div class="line">9. html() 可以解析标签，获取便签里的内容</div><div class="line">	1. $(&apos;&lt;li&gt;&lt;/li&gt;&apos;)，创建一个li元素，并且包装为jquery对象</div><div class="line">10. insertBefore（另一个元素）把一个元素插入到另一个元素的前面</div><div class="line">11. insertAfter（另一个元素） 把一个元素插入到另一个元素的后面</div><div class="line">12. ：checkedbox  可以找到所有的复选框</div><div class="line">13. ：check </div><div class="line">14. ：checkedbox：check  可以找到所有的复选框</div><div class="line">15. 生成表格table</div><div class="line">	1.  &lt;script type=&quot;text/plain&quot; id=&apos;template&apos;&gt;</div><div class="line">	        &lt;tr&gt;</div><div class="line">	            &lt;td&gt;</div><div class="line">	                &lt;input type=&quot;checkbox&quot; /&gt;</div><div class="line">	            &lt;/td&gt;</div><div class="line">	            &lt;td&gt;JavaScript&lt;/td&gt;</div><div class="line">	            &lt;td&gt;前端与移动开发学院&lt;/td&gt;</div><div class="line">	            &lt;td&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;删除&lt;/a&gt; &lt;a href=&quot;javascript:void(0)&quot;&gt;编辑&lt;/a&gt;&lt;/td&gt;</div><div class="line">	        &lt;/tr&gt;</div><div class="line">	    &lt;/script&gt;</div><div class="line">	2.  默认如果没写type，浏览器会把script的type当成&quot;text/javascript&quot;，那么如果当成这种模式</div><div class="line">    3. 那么在script标签里写的内容，都会当成js代码来解析</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">    4. 如果type改成text/plain,那么代表script标签里写的内容，就是一段纯字符串，不做任何解析</div><div class="line">    5. html()获取标签内的内容    var str = $(&apos;#template&apos;).html();</div><div class="line">16. on绑定事件</div><div class="line">    1. </div><div class="line">			    用法一：</div><div class="line">			            jquery对象.on(事件字符串,function);</div><div class="line">			    用法二：</div><div class="line">			            jquery对象.on(&quot;事件1 事件2 事件3 ………………&quot;,function);</div><div class="line">			            代表所有事件都调用同一个function</div><div class="line">			    用法三：</div><div class="line">			            jquery对象.on(&#123;</div><div class="line">			</div><div class="line">			                &apos;事件1&apos;:方法1,</div><div class="line">			                &apos;事件2&apos;:方法2,</div><div class="line">			                &apos;事件3&apos;:方法3</div><div class="line">			                ......</div><div class="line">			            &#125;);</div><div class="line">			            给一个对象绑定多个事件，并且每个事件有不同的响应方法			</div><div class="line">			    用法四：</div><div class="line">			            jquery对象.on(事件字符串,选择器,function);</div><div class="line">			</div><div class="line">			            首先要在jquery对象范围内触发事件，并且还要满足选择器才能触发</div><div class="line">			            例如&apos;li&apos;：这就代表在jquery对象范围内触发，并且还要是它的子元素为li标签的触发</div><div class="line">			</div><div class="line">			            注意：事件字符串里可以写多个事件，代表多个事件也绑定同一个方法				</div><div class="line">			    用法五：</div><div class="line">			            jquery对象.on(&#123;</div><div class="line">			                &apos;事件1&apos;:方法1,</div><div class="line">			                &apos;事件2&apos;:方法2,</div><div class="line">			                &apos;事件3&apos;:方法3</div><div class="line">			            &#125;,选择器);</div><div class="line">17. </div><div class="line">18. ().left/top   是获取匹配元素在当前视口的相对偏移,而不是与原生js中的是最近 的定位父级之间的距离</div><div class="line">18. </div><div class="line">		1.  $(&apos;img&apos;).offset(&#123;</div><div class="line">				//event.pageX 可以得到你在当前body点击的x值坐标</div><div class="line">                top: event.pageY - $(&apos;img&apos;).height() * 0.5,</div><div class="line">                &apos;left&apos;: event.pageX - $(&apos;img&apos;).width() * 0.5</div><div class="line">            &#125;);</div></pre></td></tr></table></figure>
+<h2 id="-1"><a href="#-1" class="headerlink" title="#"></a>#</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">1. attr取checked时，很可能取到undefine</div><div class="line">2.  什么时候得到的不是undefine，就是当checkbox在标签内写一个checked属性时，但是此时，用attr取，无论如何取到的结果都是checked</div><div class="line">3.  如果要取checked状态最正确的值，那么通过attr是拿不到的，用prop才拿得到, prop取是正常的</div><div class="line">4.  动画队列</div><div class="line">	1.  写动画效果，其实就是把这些效果加在动画队列里面，一个一个按顺序的执行</div><div class="line">	2.  队列：先进先出，所以按执行顺序写，这样就不会</div><div class="line">		1.  $(&apos;.box&apos;).animate(&#123;</div><div class="line">                top:100,</div><div class="line">                left:100</div><div class="line">            &#125;,500)///////这样会同步执行</div><div class="line">		2. 这样是执行完top后再继续执行left</div><div class="line">            $(&apos;.box&apos;).animate(&#123;</div><div class="line">                top:100,</div><div class="line">            &#125;,500)</div><div class="line">            $(&apos;.box&apos;).animate(&#123;</div><div class="line">                left:100</div><div class="line">            &#125;,500)</div><div class="line">     3. 如果你通过queue方法加入了一个任务到队列，那么原来队列后面的内容默认不会执行，如果要执行必须再调用dequeue的方法    </div><div class="line">	         1.  $(&apos;.box&apos;).queue(function () &#123;</div><div class="line">	                    console.log(&apos;我加入到队列里了&apos;);</div><div class="line">	                    $(&apos;.box&apos;).dequeue();</div><div class="line">	                &#125;)  </div><div class="line">5. 使用插件：</div><div class="line">	1. jquery的颜色过渡效果插件</div><div class="line">		1. 顺序必须是先导入jQuery，再导入jQuery框架</div><div class="line">		2. 此框架的作用就是让animate也支持backgroundColor </div><div class="line">		3. &lt;script src=&quot;js/jquery.color.js&quot;&gt;&lt;/script&gt;</div><div class="line">	2. jquery的颜色过渡效果插件</div><div class="line">		1. 一定要先导入jQuery，再导入jQueryUI</div><div class="line">		2. css一定放在根目录，然后引入这个css文件</div><div class="line">		3. 去demo里喜欢什么效果，就扒它的代码拿过来就行了</div><div class="line">		4. &lt;script src=&quot;js/jquery-ui.js&quot;&gt;&lt;/script&gt;</div><div class="line">			 &lt;link rel=&quot;stylesheet&quot; href=&quot;jquery-ui.css&quot;&gt;</div><div class="line">		5. 为了保证jQueryUI的各种功能都正常，css和js文件都要导入，除此以外，image文件夹也要拖到项目 </div><div class="line">6. 多库共存</div><div class="line">	1. 假如说以后你项目里导入了另外一个库，$也是那一个库的关键字</div><div class="line">	2. 那么就把jQuery的$符号作用去掉就行了</div><div class="line">	3. var r = $.noConflict();///这个方法也会有一个返回</div><div class="line">	4. 值，你用什么变量接收，那么这个变量名就相当于原来的$</div></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -190,57 +216,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/09/23/JQuery的一些基础知识/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/23/Emmet语法/" class="archive-article-date">
-  	<time datetime="2017-09-23T11:25:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/23/Emmet语法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Emmet语法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/23/Emmet语法/">Emmet语法</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -263,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
